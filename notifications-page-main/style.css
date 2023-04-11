@@ -1,0 +1,144 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+* {
+ margin: 0;
+ font-family: "Poppins", sans-serif;
+}
+
+
+.notifications .show {
+    display: inline-flex;
+}
+.red-dot {
+    background-color: red;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+body {
+    display: grid;
+    place-items: center;
+    background-color: hsl(211, 68%, 94%);
+}
+.notifications-container {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2em;
+    align-items: center;
+}
+
+.notifications-counter {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.notifications-counter h2 {
+    font-size: 1.3rem;
+}
+a { 
+    text-decoration: none;
+    color:hsl(219, 12%, 42%);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.notifications-counter .counter {
+    padding: 0rem 0.6rem;
+    border-radius: 6px;
+    background: hsl(219, 85%, 26%);
+    color: white;
+    font-weight: 700;
+}
+
+.notifications {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.notification {
+    display: flex;
+    background: white;
+    padding: 1rem;
+    gap: 0.7rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.active {
+    background: hsl(210, 60%, 98%);
+}
+.profile-picture img {
+    min-width: 2.5em;
+    width: 2.5em;
+}
+
+
+
+
+.picture img {
+    min-width: 2.5em;
+    width: 2.5em;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: hsl(219, 12%, 42%);
+}
+.name {
+    font-weight: 700;
+    font-size: 0.87rem;
+    color: black;
+}
+.complicated-comment {
+    display: flex;
+    gap: 0.5rem;
+}
+.commented-picture {
+    justify-content: space-between;
+}
+.post, .club {
+    color:  hsl(219, 12%, 42%);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.post:hover, .club:hover, .name:hover, a:hover {
+    color: hsl(219, 85%, 26%);
+}
+p {
+    font-size: 0.87rem;
+    color: hsl(219, 14%, 63%);
+}
+
+.private-message-container {
+    padding: 0.6rem;
+    border: 2px solid hsl(209, 64%, 94%);
+    margin-top: .6rem;
+    color: hsl(224, 21%, 14%);
+}
+
+.private-message-container:hover {
+    background-color: hsl(209, 64%, 94%);
+}
+.private-message-container p {
+    color: hsl(219, 12%, 42%);
+}
+
+@media only screen and (min-width: 700px) {
+    .notifications-container {
+        max-width: 700px;
+    }
+    body {
+        padding: 3rem 2rem;
+    }
+
+ }
+

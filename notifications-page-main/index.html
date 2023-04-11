@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="notifications-container">
+      <header>
+        <div class="notifications-counter">
+          <h2>Notifications</h2>
+          <div class="counter">
+            <span id="counter">3</span>
+          </div>
+        </div>
+        <div class="mark-all-as-read">
+          <a href="#">Mark all as read</a>
+        </div>
+      </header>
+      <div class="notifications">
+        <div id="notification1" class="notification active">
+          <div class="profile-picture">
+            <img src="/assets/images/avatar-mark-webber.webp" alt="">
+          </div>
+          <div class="notification-content">
+            <h5><span class="name">Mark Webber</span> reacted to your recent post <span class="post">My first tournament today!</span> <span id="red-dot1" class="red-dot show"></span></h5>
+            <p>1m ago</p>
+          </div>
+        </div>
+        <div id="notification2" class="notification active">
+          <div class="profile-picture">
+            <img src="/assets/images/avatar-angela-gray.webp" alt="">
+          </div>
+          <div class="notification-content">
+            <h5> <span class="name">Angela Gray</span> followed you <span id="red-dot2" class="red-dot show"></span></h5>
+            <p>5m ago</p>
+          </div>
+        </div>
+        <div id="notification3" class="notification active">
+          <div class="profile-picture">
+            <img src="/assets/images/avatar-jacob-thompson.webp" alt="">
+          </div>
+          <div class="notification-content">
+            <h5><span class="name">Jacob Thompson</span> has joined your group <span class="club">Chess Club</span> <span id="red-dot3" class="red-dot show"></span></h5>
+            <p>1day ago</p>
+          </div>
+        </div>
+        <div class="notification">
+          <div class="profile-picture">
+            <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          </div>
+          <div class="notification-content">
+            <h5><span class="name">Rizky Hasanuddin</span> sent you a private message</h5>
+            <p>5days ago</p>
+            <div class="private-message-container">
+              <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                I'm already having lots of fun and improving my game.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="notification commented-picture">
+          <div class="complicated-comment">
+            <div class="profile-picture">
+              <img src="/assets/images/avatar-kimberly-smith.webp" alt="">
+            </div>
+            <div class="notification-content-comment">
+              <div class="title-and-date">
+                <h5><span class="name">Kimberly Smith</span> commented on your picture</h5>
+              <p>1week ago</p>
+              </div>
+            </div>
+          </div>
+          <div class="picture">
+            <img src="/assets/images/image-chess.webp" alt="">
+          </div>
+        </div>
+        <div class="notification">
+          <div class="profile-picture">
+            <img src="/assets/images/avatar-nathan-peterson.webp" alt="">
+          </div>
+          <div class="notification-content">
+            <h5><span class="name">Nathan Peterson</span> reacted to your recent post <span class="post">5 end-game strategies to increase your win rate</span></h5>
+            <p>2weeks ago</p>
+          </div>
+        </div>
+        <div class="notification">
+          <div class="profile-picture">
+            <img src="/assets/images/avatar-anna-kim.webp" alt="">
+          </div>
+          <div class="notification-content">
+            <h5><span class="name">Anna Kim</span> left the group <span class="club">Chess Club</span></h5>
+            <p>2weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Justine Harvey Taningco</a>.
+  </div>
+  <script defer src="script.js"></script>
+</body>
+</html>
